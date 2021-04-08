@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Auto Bucuresti</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class=header1>
+            <img src="images/car0.png" alt="logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-des">
+                    <img src="images/ham.svg" alt="hamburger" class="hamburger" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li class="exit-btn"  >
+                        <img src="images/exit.svg" alt="exitMenu" id="exitMenu">
+                    </li>
+                    <li><a href="#">home</a></li>
+                    <li class="buton"><a href="#">services</a>
+                        <div class="dropdownContent">
+                            <a href="#">mecanica</a>
+                            <a href="#">electrica</a>
+                            <a href="#">geometrie</a>
+                        </div>
+                    </li>
+                    <li><a href="#">prices</a></li>
+                    <li><a href="#">offers</a></li>
+                    <li><a href="#">advises</a></li>
+                
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/pozaService.jpg" alt="Service-hall" class="poza-service">
+            <h1 class="moto">MASINA TA ESTE PE MAINI BUNE LA NOI IN SERVICE.</h1>
+            <p>Fie ca e vorba de revizia tehnica a automobilului, inspectia tehnica periodica I.T.P., diagnoza electronica, mecanica, electrica, tinichigerie-vopsitorie, geometrie roti 3D, aer conditionat, service roti sau reparatii auto de orice gen, echipa noastra de mecanici auto calificati din service se descurca de minune. </p>
+        </section>
+    </div>
+
+    <div class="container2">
+        <div class="container">
+            <header>
+                <h1>Vino La Noi Cu Masina Sau Venim Noi La Tine!</h1>
+                <p>Iti punem la dispozitie un sistem avansat de pick-up and return prin care vei castiga timp pretios. E cel mai bun sistem de economisire a timpului. Putem face si un abonament prin care programezi revizia tehnica de intretinere a automobilului si noi ne ocupam de restul.
+                    Ai masina gata de drum fara niciun efort!</p>
+            </header>
+            <ul>
+                <li>
+                    <img src="images/carIcon2.jpg" alt="butonMas" width="80" height="68" class="plsMove">
+                    <h1>  FULL PICK-UP AND RETURN </h1>
+                    <p> Noi ridicam masina, o aducem la service unde o ingrijim si apoi ti-o aducem acasa. </p> 
+                </li>
+                <li>
+                    <img src="images/carIcon3.jpg" alt="nutonMas"  width="80" height="68" class="plsMove">
+                    <h1>JUST RETURN</h1>
+                    <p>Tu aduci masina in service, noi o ingrijim si apoi ti-o aducem acasa.</p>
+                </li>
+                <li>
+                    <img src="images/carIcon4.jpg" alt="butonMas"  width="80" height="68" class="plsMove">
+                    <h1>SIMPLE PICKUP</h1>
+                    <p >Noi aducem masina in service, o ingrijim si apoi vii si o iei acasa de la noi.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="ptButon">
+            <h2>Create Account </h2>
+            <a href="#" class='getStarted'>Get Started</a>
+        </div>  
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+            
+                <a href="#">
+                    <img src="images/car0.png" alt="logo" class="logo">
+                </a>
+                 <p class="adress"> Ceva adresa? <br> Romania </p>
+                 <ul>
+                    <li> <a href="#"> Terms </a> </li>
+                    <li class=ye> <a href="#"> Policy </a> </li>
+                 </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exitMenu');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+</html>
