@@ -160,6 +160,7 @@ nav ul {
     height: 100%;
     z-index: 6;
     padding-top: 50px;
+    
 }
 
 
@@ -172,12 +173,32 @@ nav ul li a {
     width: 100%;
     padding: 1em 2em;
     background: rgb(94, 88, 88);
+    /* margin: 1rem; */
 
 }
 
 nav ul li a:hover {
     background-color: lightgoldenrodyellow;
     color: black;
+}
+
+
+
+
+.plsTransit {
+    width: 70px;
+    height: 70px;
+    /* margin: 50px auto ; */
+    transition-property: all;
+    
+    transition-delay: 1s;
+    transition-duration: .5s;
+}
+
+.plsTransit:hover {
+    width: 100px;
+    height: 100px;
+    /* background-color: #00CC80; */
 }
 
 .exit-btn  {
