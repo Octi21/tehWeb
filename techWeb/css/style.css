@@ -19,6 +19,21 @@ ul {
     padding: 0;
 }
 
+form {
+    background-color: #00C2FF;
+    width: 70%;
+    text-align: center;
+    display: block;
+    color: honeydew;
+    border-radius: 20px;
+    padding: .9em;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 3% auto 3%;
+    position: relative;
+    z-index: 4;
+}
+
 .container {
     text-align: center;
      /* padding: .8em; */
@@ -117,7 +132,7 @@ li div {
 
 
 h2 {
-    margin-top: 7%;
+    margin-top: 5%;
 }
 .ptButon {
     padding: 3em;
@@ -210,7 +225,7 @@ nav ul li a:hover {
 }
 
 .exit-btn  img{
-    width: 15;
+    width: 15px;
     cursor: pointer;
 }
 
@@ -227,7 +242,118 @@ nav ul li a:hover {
     }
 } 
 
+.serv {
+    margin-bottom: 10px;
+}
 
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: #00C2FF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+.review {
+    background: rgb(185, 182, 182);
+    display: block;
+    color: honeydew;
+    border-radius: 20px;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 3% auto 10%;
+    position: relative;
+     z-index: 4; 
+
+}
+.button-container{
+    margin-bottom: 10px;
+}
+
+.prev-btn,
+.next-btn,
+.random-btn,
+.btn-col,
+.submit {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.back-col{
+    background-color:rgb(94, 88, 88);
+    width: 45%;
+    text-align: center;
+    display: block;
+    color: honeydew;
+    border-radius: 20px;
+    padding: .9em;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 3% auto 3%;
+    position: relative;
+    z-index: 4;
+
+
+}
+
+.submit {
+    display: block;
+    margin-left: 185px;
+}
+
+.container3 {
+    background-color: #00C2FF;
+    width: 50%;
+    text-align: center;
+    display: block;
+    color: honeydew;
+    border-radius: 20px;
+    padding: .9em;
+    text-decoration: none;
+    font-size: 1 em;
+    margin: 3% auto 3%;
+    position: relative;
+    z-index: 4;
+}
+
+.ftbt{
+    height: 50%;
+    margin-top: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.prop1 {
+    background-color: antiquewhite;
+}
+
+.prop2 {
+    color:rgb(16, 104, 126);
+}
+
+/* .prev-btn,
+.next-btn {
+  color: black;
+  font-size: 1.25rem;
+ 
+  margin: 0 0.8rem;
+  
+  cursor: pointer;
+  z-index: 8;
+}
+
+ .next1 {
+    z-index: 5;
+    
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  
+  cursor: pointer;
+}  */
 
 @media only screen and (min-width: 650px) {
    
@@ -302,17 +428,31 @@ nav ul li a:hover {
     .getStarted {
         width: 40%;
     }
+    form{
+        width: 55%;
+    }
+
+    .review {
+        width: 90%;
+    }
+  
 
 }
 
 @media only screen and (min-width: 850px) {
     .show-desktop {
         display: flex;
+        /* position:fixed; */
     }
 
-
+    form{
+        width: 500px;
+    }
     .getStarted {
         width: 30%;
+    }
+    .review {
+        width: 65%;
     }
 
 
@@ -361,5 +501,12 @@ nav ul li a:hover {
 
     .buton {
         background: #00C2FF;
+    }
+
+    .container3 {
+        width: 500px;
+    }
+    .cont4 {
+        display: flex;
     }
 } 

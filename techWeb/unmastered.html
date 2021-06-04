@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Auto Bucuresti</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script type="text/javascript" src="main.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -44,6 +45,47 @@
         </section>
     </div>
 
+    <div class="container">
+        <h2 class="back-col">background color : <span class="color">#f1f5f8</span></h2>
+        <button class="btn-col" id="btn">Change color</button>
+    </div>
+
+    <form action="https://google.com/search" target="_blank" type="GET">
+
+        <label>
+           Nelamuriri: 
+           <input type="search" name="q">
+         </label>
+      
+        <input type="submit" value="Go">
+      
+      </form>
+
+    <div class="container">
+        <div class="tit">
+            <h2 class="serv">Our Services </h2>
+            <div class="underline"></div>
+
+        </div>
+        <article class="review" >
+            <h3 id="h3">Mecanic</h3>
+            <p id="p11">REVIZII – Filtre (aer,ulei,combustibil, polen) si Ulei, Lichide Racire / Ungere</p>
+            <p id="p22">FRANE – Placute si Discuri de Frana, Saboti si Cilindrii de frana, ABS Senzori</p>
+
+            <div class="button-container">
+                <button class="prev-btn"> prev
+                    <!-- <img src="images/next.svg" alt="next" class="next1" id="next"> -->
+                </button>
+                <button class="next-btn"> next
+                    <!-- <img src="images/next.svg" alt="next" class="next1" id="next"> -->
+                </button>
+            </div>
+            <button class="random-btn">surprise me</button>
+        </article>
+
+    </div>
+
+
     <div class="container2">
         <div class="container">
             <header>
@@ -79,23 +121,45 @@
         </div>  
     </div>
 
+    <div class="cont4">
+        <div class="container3">
+            <h3>Ce parere aveti despre acest site ?</h3>
+
+            <label for="myCheck">Imi place</label> 
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+            <p id="text" style="display:none">Multumim !</p>
+
+        </div>
+
+        <form>
+            Doriti sa mai primiti cookie-uri?<br>
+            <input type="radio" name="aff" id="ye">Yes<br>
+            <input type="radio" name="aff" id="no">No
+            <button class="submit" onclick="ghe()">Submit</button>
+        </form>
+
+    </div>
+
     <footer>
-        <div class="container">
+        <div class="container" id="footr">
             <div class="footer-container">
             
                 <a href="#">
                     <img src="images/car0.png" alt="logo" class="logo">
                 </a>
-                 <p class="adress"> Ceva adresa? <br> Romania </p>
+                 <p class="adress"> Aleea ghetii nr 85? <br> Romania </p>
+                 <button onclick="fFot()" class="ftbt">Try it</button>
                  <ul>
                     <li> <a href="#"> Terms </a> </li>
-                    <li class=ye> <a href="#"> Policy </a> </li>
+                    <li id="similar"> <a href="#"> Policy </a> </li>
                  </ul>
+                
             </div>
 
         </div>
     </footer>
-
+    <script src="main.js"></script>
     <script>
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
@@ -110,7 +174,8 @@
             nav.classList.toggle('hide-mobile');
             e.preventDefault();
         });
+    
     </script>
-
+    
 </body>
 </html>
